@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root{
-    --yellow: #f9ca24;
+    --pink: #b53389;
 }
 
 *{
@@ -9,13 +9,12 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
   }
 
   *::selection{
-    background: var(--yellow);
-    color: #333;
+    background: var(--pink);
+    color: #fff0f5;
   }
 
   html{
@@ -26,14 +25,14 @@
     width: 1.4rem;
   }
   html::-webkit-scrollbar-track{
-    background: #222;
+    background: #f8f4ff;
   }
   html::-webkit-scrollbar-thumb{
-    width: var(--yellow);
+    width: var(--pink);
   }
 
   body{
-    background: #111;
+    background: white;
     overflow-x: hidden;
     padding-left: 35rem;
   }
@@ -43,8 +42,8 @@
   }
   .btn{
     padding: .7rem 3rem;
-    background: #333;
-    color: #fff;
+    background: #fff0f5;
+    color: black;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -55,7 +54,7 @@
     font-size: 1.8rem;
   }
   .btn:hover{
-    background: var(--yellow);
+    background: var(--pink);
   }
   .heading{
     text-align: center;
@@ -63,10 +62,10 @@
     font-size: 4rem;
     padding: 1rem;
     border-bottom: .1rem solid #fff4;
-    color: #fff;
+    color: black;
   }
   .heading span{
-    color: var(--yellow);
+    color: var(--pink);
   }
   header{
     position: fixed;
@@ -74,7 +73,7 @@
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: #1a1a1a;
+    background: #fff0f5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,15 +86,15 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .7rem solid var(--yellow);
+    border: .7rem solid var(--pink);
   }
 header .user .name{
     font-size: 3.5rem;
-    color: #fff;
+    color: black;
 }
 header .user .post{
     font-size: 2rem;
-    color: #eee;
+    color: black;
 }
 header .navbar{
     width: 100%;
@@ -108,13 +107,13 @@ header .navbar ul li a{
 display: block;
 padding: 1rem;
 margin: 1.5rem 0;
-background: #333;
-color: #fff;
+background: #fff0f5;
+color: black;
 font-size: 2rem;
 border-radius: 5rem;
 }
 header .navbar ul li a:hover{
-    background: var(--yellow);
+    background: var(--pink);
 }
 .fa-facebook {
     font-size: 25px;
@@ -123,7 +122,7 @@ header .navbar ul li a:hover{
   }
 .fa-square-x-twitter {
     font-size: 25px;
-    color: white;
+    color: black;
     padding-right: 30px;
 }
 .fa-instagram{
@@ -134,8 +133,8 @@ header .navbar ul li a:hover{
 #menu{
     position: fixed;
     top: 2rem; right: 2rem;
-    background: #333;
-    color: #fff;
+    background: #fff0f5;
+    color: black;
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
@@ -150,18 +149,18 @@ header .navbar ul li a:hover{
 }
 .home h3{
     font-size: 2.5rem;
-    color: #fff;
+    color: black;
 }
 .home h1{
     font-size: 5rem;
-    color: #fff;
+    color: black;
 }
 .home h1 span{
-color: var(--yellow);
+color: var(--pink);
 }
 .home p{
     font-size: 2rem;
-    color: #eee;
+    color: black;
     padding: 1rem 0;
 }
 .about .row{
@@ -178,12 +177,13 @@ color: var(--yellow);
 }
 .about .row .info h3{
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--pink);
     padding: 1rem 0;
     font-weight: normal;
 }
+
 .about .row .info h3 span{
-    color: #eee;
+    color: black;
     padding: 0 .5rem;
 
 }
@@ -194,19 +194,21 @@ color: var(--yellow);
     flex-wrap: wrap;
 }
 .about .row .counter .box{
-    width: 20rem;
-    background: #222;
+    width: 40rem;
+    height: 40rem;
+    background: #f8f4ff;
     text-align: center;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 1rem;
 }
 .about .row .counter .box span{
-    font-size: 4rem;
-    color: var(--yellow);
+    font-size: 3rem;
+    color: var(--pink);
 }
-.about .row .counter .box h3{
+.about .row .counter .box p{
     font-size: 2rem;
-    color: #fff;
+    padding-top: 2rem;
+    color: black;
 }
 
 .education .box-container{
@@ -221,24 +223,24 @@ color: var(--yellow);
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    border-left: .2rem solid black;
     position: relative;
 }
 .education .box-container .box span{
     font-size: 1.3rem;
-    background: #222;
-    color: #fff;
+    background: #f8f4ff;
+    color: black;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
 }
 .education .box-container .box h3{
     font-size: 2rem;
-    color: #fff;
+    color: black;
     padding-top: 1.5rem;
 }
 .education .box-container .box p{
     font-size: 1.4rem;
-    color: #eee;
+    color: black;
     padding: 1rem 0;
 }
 .education .box-container .box i{
@@ -250,32 +252,123 @@ color: var(--yellow);
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color: #fff;
-    background: var(--yellow);
+    color: black;
+    background: var(--pink);
 }
-.portfolio .box-container{
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*work experience*/
+  .work .box-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    padding-left: 3rem;
 }
-.portfolio .box-container .box{
-    height: 20rem;
-    width: 26rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
+.work .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid black;
+    position: relative;
 }
-.portfolio .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.work .box-container .box span{
+    font-size: 1.3rem;
+    background: #f8f4ff;
+    color: black;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
 }
-.portfolio .box-container .box:hover img{
-    transform: scale(1.2);
+.work .box-container .box h3{
+    font-size: 2rem;
+    color: black;
+    padding-top: 1.5rem;
 }
+.work .box-container .box p{
+    font-size: 1.4rem;
+    color: black;
+    padding: 1rem 0;
+}
+.work .box-container .box i{
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    background: var(--pink);
+}
+ 
 .contact .row{
 display: flex;
 align-items: center;
@@ -296,8 +389,8 @@ flex-wrap: wrap;
 .contact .row form .box{
     padding: 1.5rem;
     margin: 1rem 0;
-    background: #3333;
-    color: #fff;
+    background: #fff0f5;
+    color: black;
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
@@ -312,7 +405,7 @@ flex-wrap: wrap;
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color: #fff;
+    color: black;
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -320,13 +413,13 @@ flex-wrap: wrap;
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: #eee;
+    color: black;
     padding: 1rem 0;
     font-weight: normal;
 }
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color: var(--yellow);
+    color: var(--pink);
 }
 
 .top{
@@ -408,3 +501,14 @@ flex-wrap: wrap;
         margin: 3rem 0;
     }
 }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
