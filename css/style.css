@@ -20,6 +20,7 @@
   html{
     font-size: 62.5%;
     overflow-x: hidden;
+    
   }
   html::-webkit-scrollbar{
     width: 1.4rem;
@@ -31,85 +32,19 @@
     width: var(--pink);
   }
 
-  .lang-menu{
-    padding-top: 4rem;
-    padding-left: 4rem;
-    position: relative;
-  }
-  .selected-lang{
-    cursor: pointer;
-    display: flex;
-    line-height: 3;
-    width: 100px;
-
-  }
-  .selected-lang:before{
-    content: '';
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(https://flagsapi.com/US/shiny/32.png);
-  }
-  .lang-menu ul{
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    border: 1px solid #f8f8f8;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-  }
-  .lang-menu ul li{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  .lang-menu ul li a{
-    width: 140px;
-    display: block;
-    padding: 5px 10px;
-  }
-  .lang-menu ul li a:before{
-    content: '';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    vertical-align: middle;
-
-  }
-  .lang-menu ul li a:hover{
-    background-color: var(--pink);
-  }
-    .us:before{
-    background-image: url(https://flagsapi.com/US/shiny/32.png);
-}
-    .mn:before {
-    background-image: url(https://flagsapi.com/MN/shiny/32.png);
-  }
-    .de:before {
-    background-image: url(https://flagsapi.com/DE/shiny/32.png);
-  }
-  .lang-menu:hover ul{
-        display: block;
-  }
-
   body{
     overflow-x: hidden;
     padding-left: 35rem;
   }
-
-  .img-back{
-    background-image: url("../image/flowers.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-    background-size: 700px 700px;   
+  #myDIV {
+    background: white;
+    animation: mymove 5s infinite;
   }
-
+  
+  @keyframes mymove {
+    from {background-color: white;}
+    to {background-color: #f8f4ff;}
+  }
   section{
     min-height: 100vh;
     padding: 1rem;
@@ -220,16 +155,12 @@ header .navbar a p{
     color: blue;
     padding-right: 30px;
   }
-.fa-square-x-twitter {
-    font-size: 25px;
-    color: black;
-    padding-right: 30px;
-}
+
 .fa-instagram{
     font-size: 25px;
     color: red;
-
 }
+
 
 #menu{
     position: fixed;
@@ -242,6 +173,10 @@ header .navbar a p{
     z-index: 1000;
     display: none;
 }
+
+
+/*home section*/
+
 .home{
     display: flex;
     justify-content: center;
@@ -257,7 +192,6 @@ header .navbar a p{
     font-family: consolas;
     border-right: 4px solid violet;
     width: 18ch;
-    
 }
 
 @keyframes type {
@@ -274,6 +208,58 @@ header .navbar a p{
     }
 }    
 
+
+.fa-html5{
+  font-size: 100px;
+  color: orange;
+  padding-top: 50px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.fa-html5:hover{
+  transform: scale(1.2);
+}
+.fa-css3-alt{
+  font-size: 100px;
+  color: blue;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.fa-css3-alt:hover{
+  transform: scale(1.2);
+}
+.fa-square-js{
+  font-size: 100px;
+  color: yellow;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.fa-square-js:hover{
+  transform: scale(1.2);
+}
+.fa-wordpress{
+  font-size: 100px;
+  color: rgb(0, 23, 58);
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.fa-wordpress:hover{
+  transform: scale(1.2);
+}
+.fa-php{
+  font-size: 100px;
+  color: black;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.fa-php:hover{
+  transform: scale(1.2);
+}
+
 .home h1{
     font-size: 5rem;
     color: black;
@@ -281,37 +267,6 @@ header .navbar a p{
 .home h1 span{
 color: var(--pink);
 }
-.home p{
-    font-size: 2rem;
-    color: black;
-    padding: 1rem 0;
-}
-
- /*Creations*/
- .creations .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-.creations .box-container .box{
-    height: 20rem;
-    width: 26rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-.creations .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.creations .box-container .box:hover img{
-    transform: scale(1.2);
-}
-
 
 /*contact form */
 
@@ -393,6 +348,7 @@ flex-wrap: wrap;
 
 
 
+
 @media (max-width:1200px){
     html{
         font-size: 55%;
@@ -417,9 +373,21 @@ flex-wrap: wrap;
     body{
         padding: 0;
     }
-    .img-back{     
-        background-size: 400px 400px;
-      }
+    .fa-html5{
+      font-size: 30px;
+    }
+    .fa-css3-alt{
+      font-size: 30px;
+    }
+    .fa-square-js{
+      font-size: 30px;
+    }
+    .fa-wordpress{
+      font-size: 30px;
+    }
+    .fa-php{
+      font-size: 30px;
+    }
 
 }
 
@@ -438,18 +406,23 @@ flex-wrap: wrap;
     .heading{
         margin: 0 3rem;
     }
-    .about .counter .row .box{
-        width: 100%;
-    }
-
-    .education .box-container .box{
-        width: 100%;
-    }
-    .creations .box-container .box{
-        width: 100%;
-    }
     .contact .row form{
         margin: 3rem 0;
+    }
+    .fa-html5{
+      font-size: 15px;
+    }
+    .fa-css3-alt{
+      font-size: 15px;
+    }
+    .fa-square-js{
+      font-size: 15px;
+    }
+    .fa-wordpress{
+      font-size: 15px;
+    }
+    .fa-php{
+      font-size: 15px;
     }
 }
 
