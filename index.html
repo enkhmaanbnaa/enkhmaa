@@ -2,118 +2,159 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enkhmaa Web</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog Enkhmaa</title>
   </head>
   <body>
-    <div id="myDIV">
-      <!--header section start-->
-      <header>
-        <div class="user">
-          <img src="image/portfolio.jpg" alt="Avatar" class="img-port" />
-          <h3 class="name">Enkhmaa Oyunbold</h3>
-          <p class="post">Front End Web Developer</p>
+    <nav>
+      <div class="nav__logo"><a href="index.html">Блог</a></div>
+      <ul class="nav__links">
+        <li class="link"><a href="index.html">Нүүр хуудас</a></li>
+        <li class="link"><a href="index.html">Аялалын тэмдэглэл</a></li>
+        <li class="link"><a href="index.html">Хөөрхөн зөвөлгөө</a></li>
+        <li class="link"><a href="index.html">Миний тухай</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h1>Аялал</h1>
+          <p>
+            Аялах гэдэг нь зөвхөн шинэ газар орон үзэхэд биш, таны сэтгэл зүрх,
+            оюун санаа шинэ туршлагууд, соёл, хүмүүстэй харилцаж, амьдралын утга
+            учрыг шинэчлэн олж мэдэх үйл явц юм. Аялах явцад бид өөрийгөө илүү
+            сайн таньж, төгс төгөлдөр байдлаас холдож, бидний амьдралыг өнгөлөг,
+            сонирхолтой болгодог зүйлсийг олж авдаг.
+          </p>
+          <button>Дэлгэрэнгүй унших...</button>
         </div>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <a href="image/cv.pdf"
-            ><p>I will always be a pleasure to work with you</p>
-            <button class="btn">
-              Download CV <i class="fas fa-download"></i></button
-          ></a>
-          <ul>
-            <a href="https://www.facebook.com/enkhmaa.eegii.7"
-              ><i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com"
-              ><i class="fa-brands fa-instagram"></i>
-            </a>
-          </ul>
-        </nav>
-      </header>
-      <!--header section end-->
+      </div>
+    </header>
 
-      <div id="menu" class="fas fa-bars"></div>
-      <!--home section start-->
-
-      <section class="home" id="home">
-        <h2>H e l l o o o ...</h2>
-        <h1><span>Welcome</span> to my Website.</h1>
-        <ul>
-          <i class="fa-brands fa-html5"></i>
-          <i class="fa-brands fa-css3-alt"></i>
-          <i class="fa-brands fa-square-js"></i>
-          <i class="fa-brands fa-wordpress"></i>
-          <i class="fa-brands fa-php"></i>
-        </ul>
-      </section>
-
-      <!--home section end-->
-
-      <!--contact section start-->
-      <section class="contact" id="contact">
-        <h1 class="heading"><span>Contact</span> Me</h1>
-        <div class="row">
-          <div class="content">
-            <h3 class="title">Contact info</h3>
-
-            <div class="info">
-              <h3><i class="fas fa-envelope"></i>eenkhmaa0@gmail.com</h3>
-              <h3><i class="fas fa-phone"></i>+420 731 914 349</h3>
+    <section class="journey__container">
+      <div class="section__container">
+        <h2 class="section__title">Аялалын Тэмдэглэлүүд</h2>
+        <p class="section__subtitle">
+          Бид зөвхөн газар орон хардаггүй, харин хүн бүрийн амьдралыг таньж,
+          нээлттэй сэтгэлтэй болдог.
+        </p>
+        <div class="journey__grid">
+          <div class="country__card">
+            <img src="img/place-1.JPEG" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Neuschwanstein Castle in Bavaria Germany</span>
             </div>
           </div>
-
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="405d0a95-9f05-4077-8ea5-2512f2fd77a5"
-            />
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              class="box"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              class="box"
-              required
-            />
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              class="box message"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit" class="btn1">
-              Send a Message <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
+          <div class="country__card">
+            <img src="img/place-2.JPEG" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Swarovski Crystal Museum in Innsbruck, Austria</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="img/place-3.JPEG" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Ehrenberg Castle Bridge in Austria</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="img/place-4.JPEG" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Rhine Falls in Switzerland</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="img/place-8.JPEG" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Hallstatt, Austria</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="img/place-5.JPEG" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Interlaken in Switzerland</span>
+            </div>
+          </div>
         </div>
-      </section>
-      <!--contact section end-->
+      </div>
+    </section>
 
-      <!--scroll top button-->
-      <a href="#home" class="top">
-        <img src="image/images.jpg" alt="" />
-      </a>
+    <section class="banner__container">
+      <div class="section__container">
+        <div class="banner__content">
+          <h2>Миний бодлоор...</h2>
+          <p>
+            Аялал бол хүний амьдралын хамгийн үнэ цэнэтэй сургамжуудын нэг
+            бөгөөд энэ нь зөвхөн зугаацах зорилгоор хийдэг үйл ажиллагаа биш,
+            харин зорилгоо биелүүлэх замд бидэнд ойлголт, мэдлэг, амьдралын үнэт
+            зүйлсийг тусгайлан суралцах боломжийг олгодог.
+          </p>
+          <button>Дэлгэрэнгүй унших...</button>
+        </div>
+      </div>
+    </section>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="js/script.js"></script>
-    </div>
+    <section class="display__container">
+      <div class="section__container">
+        <h2 class="section__title">Яагаад аялах хэрэгтэй вэ?</h2>
+        <p class="section__subtitle">
+          Аялах нь дэлхийтэй холбогдох хамгийн сайхан арга бөгөөд таны сэтгэл,
+          оюун санаа хоёрт шинэ хязгааргүй ертөнцийг нээж өгдөг.
+        </p>
+        <div class="display__grid">
+          <div class="display__card grid-1">
+            <img src="img/grid-1.JPEG" alt="grid" />
+          </div>
+          <div class="display__card">
+            <i class="ri-earth-line"></i>
+            <h4>Хүсэл тэмүүлэлтэй аялал</h4>
+            <p>
+              Сэтгэл зүрхээ дагасан аялал нь зөвхөн газар орон үзэх бус, таны
+              амьдралын хамгийн үнэ цэнэтэй туршлага болох болно.
+            </p>
+          </div>
+          <div class="display__card">
+            <img src="img/grid-2.JPEG" alt="grid" />
+          </div>
+          <div class="display__card">
+            <img src="img/grid-3.JPEG" alt="grid" />
+          </div>
+          <div class="display__card">
+            <i class="ri-road-map-line"></i>
+            <h4>Үзэсгэлэнт газрууд</h4>
+            <p>
+              Дэлхийн хамгийн сайхан, сэтгэл догдлуулсан газар нутгуудыг хайж
+              олцгооё!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container">
+        <div class="social__icons">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+        </div>
+        <p>
+          Танд илүү их газрыг үзэх хэрэгтэй гэдэгт итгэ. Аялал гэдэг нь зөвхөн
+          газраар биш, зүрх сэтгэлээр аялдаг.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
